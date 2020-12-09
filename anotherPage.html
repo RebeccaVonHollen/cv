@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2nd page</title>
+  </head>
+  <body>
+    <h1>Prove can link to own other page.</h1>
+    <hr>
+    <!-- Opened index page on enter or submit <form class="" action="index.html" method="post">-->
+    <form class="" action="mailto:DoesNotExist@gmail.com" method="post" enctype="text/plain"> <!-- opens default mail app with the post info as message-->
+      <label>Enter your name:</label>
+      <input type="text" name="Name" value="">
+      <label>and password:</label>
+      <input type="password" name="PW"> <!-- This is hidden text text entry -->
+      <input type="submit" name="NameAndPwSubmit"> <!-- This is a submit button -->
+      <br> <!-- this is a new line-->
+      <input type="file"><br>
+      <input type="date"><br>
+      <input type="radio"><br>
+      <input type="range"><br>
+      <br/>
+      <label>Email:</label>
+      <input type="email" name="Email" value="">
+      <label>Message:</label>
+      <textarea name="Message" rows="5" cols="100"></textarea>
+      <!-- there are more. See online docs -->
+      <input type="submit" name="EmailSubmit">
+    </form>
+  </body>
+</html>
