@@ -1,0 +1,12 @@
+body {
+  background-color: LightBlue;
+}
+hr {
+  border-color: white;
+  border-width: 5px;
+  border-style: dotted none none none;
+  width: 90%
+}
+h1, h2 {
+  color: #3F3FFF
+}
