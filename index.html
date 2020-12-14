@@ -2,42 +2,63 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" Description="See in browser search">
-    <title>Rebecca's Test Homepage</title>
-    <!-- note can define any property for the given element here in style  or put them in the .css file-->
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Rebecca's Fancy Test Site</title>
+    <link rel="stylesheet" href="css/fancyStyles.css">
+    <link rel="icon" href="images/siteTabFlowers.ico">
+    <!-- can embed a font using a link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Heading1: Test Site</h1>
-    <table cellspacing="20"><!-- cellspacing deprecated? Doesn't work from the style tag above -->
-      <!--<thead><tr><th>Pic</th><th>Text</th></tr></thead> -->
-      <tbody>
-        <tr>
-          <td><img src="images/SemiProfMe.JPG" alt="Pic unreachable" width="80px" height="107px"></td>
-            <td>
-            <h3>Rebecca several years ago</h3>
-            <p>I made that shirt!</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p>Test link to <a href="anotherPage.html">another page</a></p>
-    <hr>
-    <h2>Course Exercises</h2>
-    <p>Section 3:<a href="Sec3CodeExercise1.html">Code Exercise1</a></p>
-
-    <!-- Note first element not showing if not an invisible container. Curious.
-    Course notes:
-    <h1>H1: Course Notes</h1>
-    <p>Meta includes many other properties than charset (utf-8 includes emojis 🦶🦶🦶🦶🦶).
-      <br> Description is shown by the search engines when searched.</p>
-    <p><i>italicized</i> is the same as <em>emphasized</em>.</p>
-    <p><b>bold</b> is the same as <strong>strong</strong>.</p>
-    <h2>H2: Picture link: can be local or url</h2>
-
-    <p>Test link to own other page: <a href="anotherPage.html">Another Page link</a></p>
-    <p><a href="https://developer.mozilla.org/en-US/">Link to MDN Documentation</a></p>
-
-  </p>
-  </body
-  -->
+    <div class="TopDiv">
+      <img id="Cloud1" src="images/cloud.png" alt="cloud pic unreachable" />
+      <h1 id="Intro">Hi, I'm Rebecca.</h1>
+      <img id="Cloud2" src="images/cloud.png" alt="cloud pic unreachable" />
+      <p id="Desc">
+         A  <span class="decText">beginner web developer</span>. I created the icon for this page but cannot distinguish its details. Back to the icon board.</p>
+      <img id="Mountain" src="images/mountain.png" alt="mountain pic unreachable" />
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img src="images/SemiProfMe.JPG" alt="Pic unreachable" width="80px" height="107px">
+        <h2>Hello.</h2>
+        <p id="Blurb">I'm a developer who is learning web development in order to keep current with in-demand coding skills.
+          And also because browsers are a free, extremely versatile compiler and UI.<br>
+          My mind was blown when I realized that both my browsers and excel gave me all the programming options I needed
+          for all my pet projects, though I'm still very happy MSVS is now open source.</p>
+      </div>
+      <hr class="DotDots">
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+           <img  class="skillImage" src="images/piano.jpg" alt="unreachable piano pic">
+           <h3>Piano</h3>
+           <p class="SkillDesc">I enjoy playing the piano. Unfortunately I don't enjoy practicing, so this isn't as skillful a skill as it could be.
+           </p>
+        </div>
+        <div class="skill-row">
+          <img class="skillImage" Id="Sketch" src="images/Sketching.png" alt="scketching pic unreachable">
+          <h3>Sketching</h3>
+          <p class="SkillDesc">Of course, Sketching with a mouse isn't as good as with a pencil. But I enjoy Sketching with all kinds of materials,
+            from charcoal ends of burned sticks to high tech blue tooth ipad pens.</p>
+        </div>
+      </div>
+      <hr class="DotDots">
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Or not.</h3>
+        <p>Given the current 2020 COVID situation, no touching.</p>
+        <a class="BUTTON" href="mailto:ThisIsAFake@email.com">CONTACT ME</a>
+        <p>
+          (Not really, the email given in this link is fake.)
+        </p>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="anotherPage.html">Another page</a>
+      <p class="WhiteText">© 2020 Rebecca Von Hollen.</p>
+    </div>
+  </body>
 </html>
+
