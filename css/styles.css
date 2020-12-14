@@ -1,7 +1,5 @@
-/* margin: top right bottom left; or margin: top/bottom left/right; */
-
 body {
-  text-align: center; /* changing the child's width will also reset this so need to set the childs margin using auto to center */
+  text-align: center;
 }
 
 .TopDiv {
@@ -31,12 +29,6 @@ h2 {
 #Intro {
   display: inline;
   font-size: 3rem;
-  /* notes:
-   - usually 16px per em
-   - specific size (px) doesn't scale when page text size changed (all will work with zoom)
-   - relative % and em fonts are against the inherited value so if change the body font size this will be relative to that one
-   - use rem to refer to relative to root em.
-  */
 }
 
 h1, h2, h3, p {
