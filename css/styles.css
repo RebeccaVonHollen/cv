@@ -1,12 +1,162 @@
+/* margin: top right bottom left; or margin: top/bottom left/right; */
+
 body {
+  text-align: center; /* changing the child's width will also reset this so need to set the childs margin using auto to center */
+}
+
+.TopDiv {
+  padding-top: 130px;
+  margin: 0 auto 20px auto;
   background-color: LightBlue;
+  padding-bottom: 30px;
 }
-hr {
-  border-color: white;
-  border-width: 5px;
-  border-style: dotted none none none;
-  width: 90%
+
+.bottom-container {
+  background-color: LightBlue;
+  padding: 50px;
 }
+
+.decText {
+  font-style:italic;
+}
+
 h1, h2 {
-  color: #3F3FFF
+  font-family: 'Dancing Script', Brush Script MT, Brush Script Std, cursive;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#Intro {
+  display: inline;
+  font-size: 3rem;
+  /* notes:
+   - usually 16px per em
+   - specific size (px) doesn't scale when page text size changed (all will work with zoom)
+   - relative % and em fonts are against the inherited value so if change the body font size this will be relative to that one
+   - use rem to refer to relative to root em.
+  */
+}
+
+h1, h2, h3, p {
+  color: Indigo;
+}
+
+#Desc {
+  font-size: 1.5rem;
+  Width: 300px;
+  margin: 30px auto 0 auto;
+  font-weight: normal;
+  line-height: 2;
+}
+
+#Cloud1 {
+  position: relative;
+  right: 10%;
+  top: 150px;
+}
+
+#Cloud2 {
+  position: relative;
+  left: 10%;
+  bottom: 80px;
+}
+
+#Blurb {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.DotDots {
+  width: 100px;
+  border-color: grey;
+  border-width: 10px;
+  border-style: dotted none none none;
+  margin: 60px auto;
+  clear: both;
+}
+
+.skill-row {
+  background-color: white;
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.skillImage {
+  width: 200px;
+  float: left;
+  margin: 0 20px;
+}
+
+.SkillDesc {
+  width: 700px;
+}
+
+#Sketch {
+  float: right;
+  margin-bottom: 50px
+}
+
+p {
+  line-height: 2;
+}
+
+.WhiteText {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.BUTTON {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: serif;
+   font-size: 1.5rem;
+   font-weight: 100;
+   padding: 10px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin:  50px auto;
+}
+
+.BUTTON:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
