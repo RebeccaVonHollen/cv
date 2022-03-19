@@ -46,7 +46,7 @@
       <div class="contact-me">
         <h2>Get In Touch</h2>
         <h3>Or not.</h3>
-        <p>Given the current 2020 COVID situation, <strong>no touching</strong>.</p>
+        <p><strong>no touching</strong>.</p>
         <a class="BUTTON" href="mailto:ThisIsAFake@email.com">CONTACT ME</a>
         <p>
           (Not really, the email given in this link is fake.)
@@ -56,8 +56,15 @@
     <div class="bottom-container">
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <a class="footer-link" href="anotherPage.html">Another page</a>
-      <button onclick="window.print()">Print Page</button>
-      <p class="WhiteText">© 2020 Rebecca Von Hollen.</p>
+      <button onclick="practicePrint()">Print Page: Practice printing specific elements</button>
+      <script>
+         function practicePrint() {
+            document.getElementById("Mountain").style.visibility = "hidden";
+            window.print();
+            document.getElementById("Mountain").style.visibility = "visible";
+         }
+      </script>
+      <p class="WhiteText">© 2022 Rebecca Von Hollen.</p>
     </div>
   </body>
 </html>
