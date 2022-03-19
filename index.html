@@ -56,9 +56,10 @@
     <div class="bottom-container">
       <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
       <a class="footer-link" href="anotherPage.html">Another page</a>
-      <button onclick="practicePrint()">Print Page: Practice printing specific elements</button>
+      <button onclick="practicePrint()">Print Page: Practice hidding specific elements</button>
       <script>
          function practicePrint() {
+           // Note hidding the element doesn't remove the space it takes from the print.
             document.getElementById("Mountain").style.visibility = "hidden";
             window.print();
             document.getElementById("Mountain").style.visibility = "visible";
